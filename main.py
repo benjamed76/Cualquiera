@@ -34,6 +34,8 @@ async def on_message(message):
         await message.channel.send(
             f"¡Hola {message.author.name}! 👋 Soy BotAtencion."
         )
-
+if message.content.lower() == "!pudieras darme informacion sobre mis facturas pendientes":
+        await message.channel.send(
+            f"¡Hola {message.author.name}! 👋 Si claro, dame tu # de proveedor y # de facturas pendientes ."
 
 client.run(TOKEN)
